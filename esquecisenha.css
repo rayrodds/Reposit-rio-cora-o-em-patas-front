@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +13,7 @@ img {
 
 /* estilo geral */
 body {
-  font-family:jockey system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+  font-family: jockey system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
   background-image: url(/FOTOSPET/cachorro\ doido.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -26,39 +25,44 @@ body {
 
 .container {
   display: flex;
-  justify-content: right  ;
+  justify-content: right;
   align-items: center;
   padding: 10px;
   width: 100%;
 }
 
-.card {
-    background: #fff;
-    border: 1px solid #ccc;
-    border-radius: 12px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0,0.1);
-    width: 550px;
-    height: 600px;
-    display: flex;
-    flex-direction: row; /* <-- mudou de column para row */
-    justify-content: center;
-    align-items: end;
-    padding: 15px;
-    margin: 12px auto;  
-    position: right;
-    
+.tamanho {
+  width: 85%;
 }
 
-.login1{
+.card {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0,0.1);
   width: 550px;
   height: 600px;
- 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  margin: 12px auto;  
+  float: right;
+  margin-right: 300px;
 }
+
+.login1 {
+  width: 550px;
+  height: 600px;
+}
+
 .login img {
-    width: 300px;
-    height: auto;
-    border-radius: 8px;
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
 }
+
 .card h1 {
   margin: 10px 0 20px;
   font-size: 22px;
@@ -82,7 +86,7 @@ body {
   text-decoration: underline;
 }
 
-/* inputs e botão */
+/* inputs */
 .login input  {
   width: 100%;
   padding: 12px;
@@ -97,25 +101,24 @@ body {
   box-shadow: 0 0 5px rgba(141, 59, 169, 0.4);
 }
 
-.login button {
+/* link com estilo idêntico ao botão */
+.login-btn {
+  display: block;
   width: 100%;
   padding: 12px;
   background: #8d3ba9;
   color: #fff;
-  border: none;
   border-radius: 8px;
   font-weight: bold;
+  text-align: center;
   cursor: pointer;
   transition: background 0.3s;
+  text-decoration: none; /* remove sublinhado */
 }
 
-.login button:hover {
+.login-btn:hover {
   background: #FFCB00;
 }
-.loginalternativo button:hover {
-  background: #FFCB00;
-}
-
 
 /* responsividade */
 @media (max-width: 600px) {
@@ -132,27 +135,19 @@ body {
     width: 150px;
   }
 }
-.card {
-  float: right; /* O card é retirado do fluxo normal e vai para a direita */
-  margin-right: 300px; /* Adiciona um espaçamento à esquerda do card */
-}
 
-.Esquecisenha{
-  position: left;
+.Esquecisenha {
   padding-right: 300px;
   padding-bottom: 20px;
 }
-
 
 .loginalternativo {
   margin-bottom: 50px;
 }
 
-
-
 .loginalternativo button {
   font-size: medium;
-  font-family:jockey system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+  font-family: jockey system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
   width: 100%;
   padding: 12px;
   background: #EAEBFF;
@@ -167,7 +162,11 @@ body {
   align-items: start;
 }
 
-.loginalternativo hr{
+.loginalternativo button:hover {
+  background: #FFCB00;
+}
+
+.loginalternativo hr {
   margin-top: 30px;
 }
 
@@ -185,33 +184,27 @@ body {
   box-shadow: 0 0 5px rgba(141, 59, 169, 0.4);
 }
 
-
-
 .container1 {
   display: flex;
-  justify-content: right ;
+  justify-content: right;
   align-items: center;
   padding: 10px;
   width: 100%;
 }
 
 .card1 {
-    background: #fff;
-    border: 1px solid #ccc;
-    border-radius: 12px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0,0.1);
-    width: 550px;
-    height: 600px;
-    display: flex;
-    flex-direction: column; /* <-- mudou de column para row */
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    margin: 12px auto;  
-    position: right;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0,0.1);
+  width: 550px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  margin: 12px auto;  
+  float: right;
+  margin-right: 300px;
 }
-.card1 {
-  float: right; /* O card é retirado do fluxo normal e vai para a direita */
-  margin-right: 300px; /* Adiciona um espaçamento à esquerda do card */
-}
-
