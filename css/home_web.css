@@ -1,0 +1,403 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5d5e6; /* fundo rosado */
+    color: #333;
+    line-height: 1.6;
+}
+
+.logo img {
+    width: 150px;  /* ajuste o tamanho */
+    height: left;
+    margin-left: auto;
+    margin-right: 1600px;
+}
+.logo {
+    background-color: #7a06b9;
+    padding: 20px;
+}
+
+/* ===== Banner ===== */
+.banner {
+    background-color: #7a06b9;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.banner-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.banner-texto h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffcc33;
+}
+
+.banner-texto p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.banner-imagem{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.banner-imagem img{
+  border-radius: 20px;
+}
+
+/* ===== Chamada ===== */
+.chamada {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.chamada h2 {
+    font-size: 1.4rem;
+    color: #4a235a;
+}
+
+.chamada span {
+    color: #7a06b9;
+    font-weight: bold;
+}
+
+/* ===== Informativo ===== */
+.informativo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1113px;
+    margin: 20px auto;
+    background: linear-gradient(90deg, #ff6a00, #7a06b9);
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 20px;
+    color: white;
+}
+
+.informativo .texto {
+    flex: 1 1 50%;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+.informativo .imagem {
+    flex: 1 1 40%;
+    text-align: center;
+}
+
+.informativo .imagem img {
+    height: 300px;
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ece6f9;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* ===== APP Section ===== */
+.app-section {
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.app-section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #4a235a;
+}
+
+.app-card {
+  background-color: #8e24aa;
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
+  display: left;
+  justify-content: right;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  max-width: 1113px;
+  margin: 0 auto;
+}
+
+.button_baixar {
+  display: flex;
+  flex-direction: flex ;
+  justify-content: center;
+  gap: 15px;
+}
+
+.app-logo {
+  height: 100px;
+}
+
+.btn-app {
+  background-color: #ffeb3b;
+  color: #000;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.google-play {
+  height: 50px;
+}
+
+.parceiros {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f2e6f9; /* lilás clarinho */
+}
+
+.parceiros h2 {
+  font-size: 24px;
+  color: #4b2c6f;
+  margin-bottom: 25px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.card {
+  background-color: #ffe873; /* amarelo claro */
+  border-radius: 12px;
+  padding: 15px;
+  width: 200px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card p {
+  flex: 1;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #4b2c6f;
+  font-size: 14px;
+  min-height: 60px; /* força espaço igual */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card img {
+  flex: 2;
+  width: 100%;
+  border-radius: 8px;
+  background: #fff;
+  padding: 8px;
+}
+
+
+/* ===== Feedbacks ===== */
+.feedbacks {
+  background-color: #8e24aa;
+  color: white;
+  border-radius: 12px;
+  padding: 30px 20px;
+  max-width: 1113px;
+  margin: 30px auto;
+  text-align: left;
+}
+
+.feedbacks h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.feedback blockquote {
+  margin: 15px 0;
+  font-style: italic;
+  border-left: 4px solid #fff;
+  padding-left: 10px;
+}
+
+.feedback span {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* ===== Cuidados ===== */
+.cuidados {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.cuidados h2 {
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+  color: #4a235a;
+}
+
+.cuidados-opcoes {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.opcao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 200000000000000000000000000px;
+}
+
+.opcao img {
+  width: 535px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.btn-opcao {
+  background: #ffeb3b;
+  margin-top: -20px;
+  padding: 10px 40px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* ===== Explicações ===== */
+.explicacao {
+  background-color: #8e24aa;
+  color: white;
+  border-radius: 12px;
+  padding: 25px 20px;
+  max-width: 1113px;
+  margin: 25px auto;
+  text-align: left;
+}
+
+.explicacao h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.explicacao p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.explicacao ul {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.explicacao ul li {
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+/* ===== Rodapé ===== */
+.rodape {
+  background-color: #4a235a;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.rodape-links {
+  
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.rodape-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.rodape-links a:hover {
+  text-decoration: underline;
+}
+
+.rodape-redes {
+  margin-bottom: 20px;
+}
+
+.rodape-redes a img {
+  width: 24px;
+  height: 24px;
+  margin: 0 8px;
+  filter: brightness(0) invert(1); /* deixa os ícones brancos */
+  transition: transform 0.3s;
+}
+
+.rodape-redes a img:hover {
+  transform: scale(1.1);
+}
+
+.rodape-logo {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.rodape-logo img {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.rodape-logo p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.rodape-redes-icon img {
+  width: 24px;
+  height: 24px;
+  margin: 0 8px;
+  filter: brightness(0) invert(1); /* se quiser garantir que fiquem brancos */
+  transition: transform 0.3s;
+}
+
+.rodape-redes-icon img:hover {
+  transform: scale(1.1);
+}
