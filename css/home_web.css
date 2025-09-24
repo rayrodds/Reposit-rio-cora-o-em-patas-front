@@ -41,6 +41,11 @@ body {
   font-weight: bold;
 }
 
+.largura_collapse {
+  width: 100% !important;
+  background-color: var(--bg) !important;
+}
+
 .logo img {
     width: 150px;  /* ajuste o tamanho */
 }
@@ -348,6 +353,7 @@ body {
 .explicacao p {
   font-size: 1rem;
   line-height: 1.5;
+  color: var(--branco_projeto);
 }
 
 .explicacao ul {
