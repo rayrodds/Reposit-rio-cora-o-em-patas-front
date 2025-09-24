@@ -1,26 +1,55 @@
 /* Reset básico */
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+
+:root {
+  --Primaria: #8C52FF;
+  --bg: #573F94;
+  --branco_projeto: #EAEBFF;
+  --Verde_medio: #FFCB00;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Jockey One", sans-serif;
     background-color: #f5d5e6; /* fundo rosado */
     color: #333;
     line-height: 1.6;
 }
 
+.cor_branco {
+  color: var(--branco_projeto);
+}
+
+.hover_branco:hover {
+  color: var(--branco_projeto);
+  border: none;
+}
+
+.inf_header {
+  display: flex;
+  gap: 1rem;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 .logo img {
     width: 150px;  /* ajuste o tamanho */
-    height: left;
-    margin-left: auto;
-    margin-right: 1600px;
 }
 .logo {
     background-color: #7a06b9;
     padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 /* ===== Banner ===== */

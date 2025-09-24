@@ -1,82 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coração em Patas</title>
-    <link rel="stylesheet" href="/css/home_web.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coração em Patas</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/home_web.css">
 </head>
+
 <body>
 
-    <!-- Cabeçalho / Banner -->
-    <header class="logo">
-        <img src="/images/logooo.webp" alt="Coração em Patas">
-    </header>
-
-
-    <div class="banner-imagem">
-        <img src="/images/adote.webp" alt="Cachorro feliz">
+  <!-- Cabeçalho / Banner -->
+  <header class="logo">
+    <img src="/images/logooo.webp" alt="Coração em Patas">
+    <div class="inf_header">
+      <a href="#baixar" class="cor_branco">Download</a>
+      <a href="#parceiros" class="cor_branco">Parceiros</a>
+      <a href="#" class="cor_branco">Ajuda</a>
+      <a href="#" class="cor_branco">Quem somos nós</a>
     </div>
+    <div class="dropdown">
+      <a class="btn dropdown-toggle cor_branco hover_branco" href="#" role="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        <i class="bi bi-person-fill cor_branco"></i>
+        Login
+      </a>
 
-    <!-- Chamada principal -->
-    <section class="chamada">
-        <h2>Procurando por um especialista para cuidar do seu Pet?<br> Conheça <span>Coração em Patas!</span></h2>
-    </section>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Sair</a></li>
+      </ul>
+    </div>
+  </header>
 
-    <!-- Bloco informativo -->
-    <section class="informativo">
-        <div class="texto">
-            <p>
-                Somos a primeira plataforma brasileira dedicada à saúde emocional, comportamental e oncológica dos pets. <br><br>
-                Unimos veterinários, tutores e tecnologia para oferecer um cuidado mais humano, sensível e integrado — especialmente em momentos delicados como o câncer. <br><br>
-                Porque amar também é escutar o que seu pet não consegue dizer com palavras.
-            </p>
-        </div>
-        <div class="imagem">
-            <img src="/images/Captura de tela 2025-09-09 171142.png" alt="Gatos e cachorros">
-        </div>
-    </section>
 
-    <!-- Seção App -->
-  <section class="app-section">
+  <div class="banner-imagem">
+    <img src="/images/adote.webp" alt="Cachorro feliz">
+  </div>
+
+  <!-- Chamada principal -->
+  <section class="chamada">
+    <h2>Procurando por um especialista para cuidar do seu Pet?<br> Conheça <span>Coração em Patas!</span></h2>
+  </section>
+
+  <!-- Bloco informativo -->
+  <section class="informativo">
+    <div class="texto">
+      <p>
+        Somos a primeira plataforma brasileira dedicada à saúde emocional, comportamental e oncológica dos pets.
+        <br><br>
+        Unimos veterinários, tutores e tecnologia para oferecer um cuidado mais humano, sensível e integrado —
+        especialmente em momentos delicados como o câncer. <br><br>
+        Porque amar também é escutar o que seu pet não consegue dizer com palavras.
+      </p>
+    </div>
+    <div class="imagem">
+      <img src="/images/Captura de tela 2025-09-09 171142.png" alt="Gatos e cachorros">
+    </div>
+  </section>
+
+  <!-- Seção App -->
+  <section class="app-section" id="baixar">
     <h2>Baixe nosso app aqui!</h2>
     <div class="app-card">
       <img src="/images/logooo.webp" alt="Logo Coração em Patas" class="app-logo">
-       <div class="button_baixar">
-      <a href="#" class="btn-app">Clique aqui e baixe agora!</a>
-      <img src="/images/imagem_do_google.webp" alt="Disponível no Google Play" class="google-play">
-    </div>
+      <div class="button_baixar">
+        <a href="#" class="btn-app">Clique aqui e baixe agora!</a>
+        <img src="/images/imagem_do_google.webp" alt="Disponível no Google Play" class="google-play">
+      </div>
     </div>
 
-   
+
   </section>
 
   <!-- Seção Parceiros -->
-  <section class="parceiros">
-  <h2>Nossos parceiros</h2>
-  <div class="cards">
-    <div class="card">
-      <p>Pet Shop: Raposo</p>
-      <img src="/images/raposo.webp" alt="Pet Shop Raposo">
+  <section class="parceiros" id="parceiros">
+    <h2>Nossos parceiros</h2>
+    <div class="cards">
+      <div class="card">
+        <p>Pet Shop: Raposo</p>
+        <img src="/images/raposo.webp" alt="Pet Shop Raposo">
+      </div>
+      <div class="card">
+        <p>Rayan Neto<br>Oncologista</p>
+        <img src="/images/oncologo.webp" alt="Rayan Neto Oncologista">
+      </div>
+      <div class="card">
+        <p>Pet shop: Casa do Pet</p>
+        <img src="/images/casadopet.webp" alt="Pet shop: Casa do Pet">
+      </div>
+      <div class="card">
+        <p>Clinvet<br>Veterinária</p>
+        <img src="/images/clinvet.webp" alt="Clinvet Veterinária">
+      </div>
+      <div class="card">
+        <p>Doutora Rose da silva</p>
+        <img src="/images/onocologa.webp" alt="Doutora Rose">
+      </div>
     </div>
-    <div class="card">
-      <p>Rayan Neto<br>Oncologista</p>
-      <img src="/images/oncologo.webp" alt="Rayan Neto Oncologista">
-    </div>
-    <div class="card">
-      <p>Pet shop: Casa do Pet</p>
-      <img src="/images/casadopet.webp" alt="Pet shop: Casa do Pet">
-    </div>
-    <div class="card">
-      <p>Clinvet<br>Veterinária</p>
-      <img src="/images/clinvet.webp" alt="Clinvet Veterinária">
-    </div>
-    <div class="card">
-      <p>Doutora Rose da silva</p>
-      <img src="/images/onocologa.webp" alt="Doutora Rose">
-    </div>
-  </div>
-</section>
+  </section>
 
 
   <!-- Seção Feedbacks -->
@@ -85,19 +112,19 @@
     <div class="feedback">
       <p><strong>Tutores</strong></p>
       <blockquote>
-        “Depois da cirurgia, eu não sabia como lidar com o comportamento da Mel. 
+        “Depois da cirurgia, eu não sabia como lidar com o comportamento da Mel.
         A plataforma me ajudou a entender que ela precisava de mais silêncio e carinho.”<br>
         <span>— Júlia A., tutora da Mel</span>
       </blockquote>
       <blockquote>
-        “O alerta da plataforma me mostrou que algo estava errado antes de qualquer sintoma físico. 
+        “O alerta da plataforma me mostrou que algo estava errado antes de qualquer sintoma físico.
         Isso salvou o Simba.”<br>
         <span>— Carlos N., tutor do Simba</span>
       </blockquote>
     </div>
   </section>
 
-<!-- Seção Cuidados -->
+  <!-- Seção Cuidados -->
   <section class="cuidados">
     <h2>Cuide do seu peludo com amor e tecnologia!</h2>
     <div class="cuidados-opcoes">
@@ -118,7 +145,7 @@
     <h3>✦ Como uso o App?</h3>
     <p>
       Nosso app é para tutores que acreditam que saúde vai além do físico. <br><br>
-      Se você quer oferecer um cuidado mais completo, com atenção ao bem-estar emocional, 
+      Se você quer oferecer um cuidado mais completo, com atenção ao bem-estar emocional,
       comportamental e até suporte oncológico — aqui é o seu lugar. <br><br>
       Também é feito para veterinários que desejam atuar de forma mais empática, integrada e próxima das famílias.
     </p>
@@ -128,9 +155,9 @@
   <section class="explicacao">
     <h3>👥 Pra quem é</h3>
     <p>
-      Usar o app é simples: basta criar um perfil para o seu pet, selecionar as especialidades que precisa 
+      Usar o app é simples: basta criar um perfil para o seu pet, selecionar as especialidades que precisa
       e agendar um atendimento com profissionais especializados. <br><br>
-      Você também pode acompanhar a evolução emocional e comportamental do seu pet, receber orientações 
+      Você também pode acompanhar a evolução emocional e comportamental do seu pet, receber orientações
       e acessar conteúdos personalizados. Tudo em um só lugar, com carinho e tecnologia.
     </p>
   </section>
@@ -139,55 +166,60 @@
   <section class="explicacao">
     <h3>⚕️ Especialidades</h3>
     <p>
-      Cuidar da saúde do seu pet nunca foi tão fácil! Na nossa clínica veterinária online, você agenda uma consulta 
-      em poucos cliques e recebe atendimento especializado onde estiver, com todo carinho e atenção que seu melhor 
+      Cuidar da saúde do seu pet nunca foi tão fácil! Na nossa clínica veterinária online, você agenda uma consulta
+      em poucos cliques e recebe atendimento especializado onde estiver, com todo carinho e atenção que seu melhor
       amigo merece. <br><br>
       Confira algumas das especialidades oferecidas para você escolher o que seu pet precisa:
     </p>
     <ul>
       <li><strong>🐾 Clínica Geral</strong> <br>
-        Avaliação de sintomas, check-up de rotina, dúvidas sobre saúde e comportamento. Ideal para quem precisa 
+        Avaliação de sintomas, check-up de rotina, dúvidas sobre saúde e comportamento. Ideal para quem precisa
         de orientação rápida e confiável.
       </li>
       <li><strong>🐾 Dermatologia</strong> <br>
-        Seu pet está com coceira, queda de pelos ou feridas na pele? Nossos especialistas em dermatologia ajudam 
+        Seu pet está com coceira, queda de pelos ou feridas na pele? Nossos especialistas em dermatologia ajudam
         a identificar e tratar esses problemas com eficiência.
       </li>
     </ul>
   </section>
 
-   <footer class="rodape">
-  <div class="rodape-links">
-    <a href="#">Política de Privacidade</a> |
-    <a href="#">Suporte e Central de Ajuda</a>
-  </div>
-  <div class="rodape-redes">
-    <a href="https://instagram.com/seuperfil" class="rodape-redes-icon">
-      <img src="/images/logos/instagram.svg" alt="Instagram">
-    </a>
+  <footer class="rodape">
+    <div class="rodape-links">
+      <a href="#">Política de Privacidade</a> |
+      <a href="#">Suporte e Central de Ajuda</a>
+    </div>
+    <div class="rodape-redes">
+      <a href="https://instagram.com/seuperfil" class="rodape-redes-icon">
+        <img src="/images/logos/instagram.svg" alt="Instagram">
+      </a>
 
-    <a href="https://instagram.com/seuperfil" class="rodape-redes-icon">
-      <img src="/images/logos/facebook.svg" alt="facebook">
-    </a>
+      <a href="https://instagram.com/seuperfil" class="rodape-redes-icon">
+        <img src="/images/logos/facebook.svg" alt="facebook">
+      </a>
 
-    <a href="https://instagram.com/seuperfil" class="rodape-redes-icon">
-      <img src="/images/logos/linkedin.svg" alt="linkedin">
-    </a>
-    
-    <a href="https://instagram.com/seuperfil" class="rodape-redes-icon">
-      <img src="/images/logos/youtuber.svg" alt="youtuber">
-    </a>
-    
-    <a href="https://instagram.com/seuperfil" class="rodape-redes-icon">
-      <img src="/images/logos/tiktok.svg" alt="tiktok">
-    </a>
-  </div>
+      <a href="https://instagram.com/seuperfil" class="rodape-redes-icon">
+        <img src="/images/logos/linkedin.svg" alt="linkedin">
+      </a>
 
-  <div class="rodape-logo">
-    <img src="/images/logooo.webp" alt="Logo Coração em Patas">
-    <p>© Pet-mental – Todos os direitos reservados</p>
-  </div>
-</footer>
+      <a href="https://instagram.com/seuperfil" class="rodape-redes-icon">
+        <img src="/images/logos/youtuber.svg" alt="youtuber">
+      </a>
+
+      <a href="https://instagram.com/seuperfil" class="rodape-redes-icon">
+        <img src="/images/logos/tiktok.svg" alt="tiktok">
+      </a>
+    </div>
+
+    <div class="rodape-logo">
+      <img src="/images/logooo.webp" alt="Logo Coração em Patas">
+      <p>© Pet-mental – Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 
 </body>
+
 </html>
