@@ -36,7 +36,7 @@ A página inicial serve como uma **apresentação e ponto de entrada** para tuto
 
 4. **Execute o projeto:**
 
-   * Clique com o botão direito no arquivo `index.html`
+   * Clique com o botão direito no arquivo `web_pet.html`
    * Selecione **“Open with Live Server”**
 
 O projeto será aberto automaticamente em seu navegador padrão.
