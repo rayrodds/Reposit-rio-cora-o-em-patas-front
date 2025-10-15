@@ -150,17 +150,14 @@ body {
 .informativo .imagem {
   position: relative;
   right: 20%;
-
   display: flex;
-
 }
-
 
 /* imagem do gato */
 .informativo .imagem img {
   position: relative;
   z-index: 2;
-  width: 10 00px;
+  width: 1000px;
   height: auto;
 }
 
@@ -184,28 +181,30 @@ body {
   position: relative;
   right: 70%;
   width: 650px;
-  
 }
 
-/* botão */
-.informativo .texto button {
+/* botão Saiba Mais alinhado ao texto */
+.informativo .texto .btn-opcao {
+  position: relative;
+  right: 70%;
+  display: inline-block;
+  margin-top: 10px;
   background-color: #573F94;
-  border: none;
-  border-radius: 8px;
-  padding: 10px 25px;
-  font-size: 16px;
-  font-weight: bold;
   color: #FFCB00;
-  cursor: pointer;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 12px 30px;
+  text-decoration: none;
+  transition: 0.3s ease;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
-  transition: 0.3s;
-
-
+  text-align: center;
 }
 
-.informativo .texto button:hover {
+.informativo .texto .btn-opcao:hover {
   background-color: #6a3fd4;
+  color: #FFCB00;
 }
+
 
 /* Reset */
 * {
@@ -328,13 +327,27 @@ body {
 
 /* ===== Feedbacks ===== */
 .feedbacks {
-  background-color: #8e24aa;
+  background-color: #FFCB00;
   color: white;
-  border-radius: 12px;
+  border-radius: 50px;
   padding: 30px 20px;
-  max-width: 1113px;
   margin: 30px auto;
   text-align: left;
+  position: relative;
+  left: 13%;
+  height: 500px;
+
+}
+
+.feedback p {
+  font-size: 27px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  position: relative; 
+  top: 150px;
+  right: -20px;
+  width: 650px;
+  left:50px
 }
 
 .feedbacks h3 {
@@ -349,12 +362,7 @@ body {
   padding-left: 10px;
 }
 
-.feedback span {
-  display: block;
-  margin-top: 5px;
-  font-size: 0.9rem;
-  font-weight: bold;
-}
+
 
 /* ===== Cuidados ===== */
 .cuidados {
@@ -397,6 +405,34 @@ body {
   font-weight: bold;
   color: #000;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.btn-opcaoroxo {
+  background: #573F94;
+  margin-top: -20px;
+  padding: 10px 40px;
+  height: 60px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  position: relative;
+  top: 80px;
+  left:50px
+}
+
+.btn-opcaoroxoo {
+  background: #573F94;
+
+  padding: 10px 40px;
+  height: 60px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  position: relative;
+  top: 200px;
+  left:50px
 }
 
 /* ===== Explicações ===== */
@@ -501,3 +537,5 @@ body {
 .rodape-redes-icon img:hover {
   transform: scale(1.1);
 }
+
+
