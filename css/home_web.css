@@ -325,11 +325,23 @@ body {
 
 .cards {
   display: flex;
-  justify-content: center;
   gap: 30px;
-  flex-wrap: wrap; /* permite quebrar linha se necessário */
-  margin: auto;
+  overflow: hidden; /* importante: não mostra scroll */
+  flex-wrap: nowrap;
+  scroll-behavior: smooth;
 }
+
+.card {
+  flex: 0 0 auto;
+  width: 250px; /* ajuste do tamanho do card */
+}
+
+
+.card {
+  flex: 0 0 auto; /* mantém o tamanho original dos cards */
+}
+
+
 
 .card {
   background-color: #FFCB00;
@@ -363,6 +375,28 @@ body {
   border-radius: 8px;
   padding: 0px;
 }
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  overflow-x: auto; /* permite scroll horizontal */
+  scroll-behavior: smooth;
+  padding-bottom: 15px; /* pra não cortar sombra e dar espaço */
+  /* Remove scrollbar visual */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.cards::-webkit-scrollbar {
+  display: none; /* Chrome, Safari e Opera */
+}
+
+/* Não mexer no card, só garantir que não encolha no flex */
+.card {
+  flex-shrink: 0;
+}
+
 
 /* ===== Feedbacks ===== */
 .feedbacks {
@@ -708,3 +742,16 @@ body {
     font-size: 14px;
   }
 
+@media (max-width: 768px) {
+  .cards {
+    gap: 15px;
+  }
+
+  .card {
+    width: 250px;
+  }
+
+  .card p {
+    font-size: 18px;
+  }
+}
