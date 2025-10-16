@@ -8,10 +8,56 @@
   --Verde_medio: #FFCB00;
 }
 
+/* ===== Menu Hambúrguer ===== */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger-line {
+  width: 25px;
+  height: 3px;
+  background-color: var(--branco_projeto);
+  border-radius: 2px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: var(--bg);
+    padding: 15px;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 8px;
+    z-index: 999;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu a,
+  .nav-menu .dropdown {
+    width: 100%;
+  }
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
@@ -19,10 +65,10 @@ a {
 }
 
 body {
-    font-family: "Jockey One", sans-serif;
-    background-color: #f5d5e6; /* fundo rosado */
-    color: #333;
-    line-height: 1.6;
+  font-family: "Jockey One", sans-serif;
+  background-color: #f5d5e6;
+  color: #333;
+  line-height: 1.6;
 }
 
 .cor_branco {
@@ -47,79 +93,78 @@ body {
 }
 
 .logo img {
-    width: 150px;  /* ajuste o tamanho */
+  width: 150px;
 }
+
 .logo {
-    background-color: #7a06b9;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  background-color: #7a06b9;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 /* ===== Banner ===== */
 .banner {
-    background-color: #7a06b9;
-    color: white;
-    padding: 20px;
-    border-radius: 20px;
+  background-color: #7a06b9;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
 }
 
 .banner-conteudo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1000px;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .banner-texto h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #ffcc33;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffcc33;
 }
 
 .banner-texto p {
-    margin-top: 10px;
-    font-size: 0.9rem;
+  margin-top: 10px;
+  font-size: 0.9rem;
 }
 
-.banner-imagem{
+.banner-imagem {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.banner-imagem h1{
+
+.banner-imagem h1 {
   align-items: center;
   position: absolute;
   color: #FFCB00;
   font-family: jockey system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 375%;
   font-weight: 700;
-
 }
 
-
-.banner-imagem img{
-
+.banner-imagem img {
   height: 80%;
   width: 100%;
 }
 
 /* ===== Chamada ===== */
 .chamada {
-    text-align: center;
-    padding: 30px 20px;
+  text-align: center;
+  padding: 30px 20px;
 }
 
 .chamada h2 {
-    font-size: 1.4rem;
-    color: #4a235a;
+  font-size: 1.4rem;
+  color: #4a235a;
 }
 
 .chamada span {
-    color: #7a06b9;
-    font-weight: bold;
+  color: #7a06b9;
+  font-weight: bold;
 }
 
 /* ===== Informativo ===== */
@@ -133,7 +178,6 @@ body {
   overflow: hidden;
 }
 
-/* círculo amarelo no canto direito */
 .informativo::after {
   content: "";
   position: absolute;
@@ -146,14 +190,12 @@ body {
   z-index: 0;
 }
 
-/* container do gato */
 .informativo .imagem {
   position: relative;
   right: 20%;
   display: flex;
 }
 
-/* imagem do gato */
 .informativo .imagem img {
   position: relative;
   z-index: 2;
@@ -161,7 +203,6 @@ body {
   height: auto;
 }
 
-/* texto da direita */
 .informativo .texto {
   max-width: 520px;
   color: #573F94;
@@ -183,7 +224,6 @@ body {
   width: 650px;
 }
 
-/* botão Saiba Mais alinhado ao texto */
 .informativo .texto .btn-opcao {
   position: relative;
   right: 70%;
@@ -204,7 +244,6 @@ body {
   background-color: #6a3fd4;
   color: #FFCB00;
 }
-
 
 /* Reset */
 * {
@@ -249,7 +288,7 @@ body {
 
 .button_baixar {
   display: flex;
-  flex-direction: flex ;
+  flex-direction: flex;
   justify-content: center;
   gap: 15px;
 }
@@ -271,6 +310,7 @@ body {
   height: 50px;
 }
 
+/* ===== Parceiros ===== */
 .parceiros {
   text-align: center;
   padding: 40px 20px;
@@ -287,12 +327,12 @@ body {
   display: flex;
   justify-content: center;
   gap: 30px;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* permite quebrar linha se necessário */
   margin: auto;
 }
 
 .card {
-  background-color: #FFCB00; /* amarelo claro */
+  background-color: #FFCB00;
   border-radius: 12px;
   padding: 15px;
   width: 400px;
@@ -310,7 +350,7 @@ body {
   margin-bottom: 10px;
   color: #63402C;
   font-size: 34px;
-  min-height: 60px; /* força espaço igual */
+  min-height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -324,7 +364,6 @@ body {
   padding: 0px;
 }
 
-
 /* ===== Feedbacks ===== */
 .feedbacks {
   background-color: #FFCB00;
@@ -334,9 +373,7 @@ body {
   margin: 30px auto;
   text-align: left;
   position: relative;
-  left: 13%;
   height: 500px;
-
 }
 
 .feedback p {
@@ -347,7 +384,7 @@ body {
   top: 150px;
   right: -20px;
   width: 650px;
-  left:50px
+  left:300px;
 }
 
 .feedbacks h3 {
@@ -361,8 +398,6 @@ body {
   border-left: 4px solid #fff;
   padding-left: 10px;
 }
-
-
 
 /* ===== Cuidados ===== */
 .cuidados {
@@ -418,12 +453,11 @@ body {
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   position: relative;
   top: 80px;
-  left:50px
+  left:300px;
 }
 
 .btn-opcaoroxoo {
   background: #573F94;
-
   padding: 10px 40px;
   height: 60px;
   border-radius: 8px;
@@ -432,7 +466,7 @@ body {
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   position: relative;
   top: 200px;
-  left:50px
+  left:300px;
 }
 
 /* ===== Explicações ===== */
@@ -477,7 +511,6 @@ body {
 }
 
 .rodape-links {
-  
   margin-bottom: 20px;
   font-size: 1rem;
 }
@@ -501,7 +534,7 @@ body {
   width: 24px;
   height: 24px;
   margin: 0 8px;
-  filter: brightness(0) invert(1); /* deixa os ícones brancos */
+  filter: brightness(0) invert(1);
   transition: transform 0.3s;
 }
 
@@ -530,7 +563,7 @@ body {
   width: 24px;
   height: 24px;
   margin: 0 8px;
-  filter: brightness(0) invert(1); /* se quiser garantir que fiquem brancos */
+  filter: brightness(0) invert(1);
   transition: transform 0.3s;
 }
 
@@ -538,4 +571,140 @@ body {
   transform: scale(1.1);
 }
 
+/* ===== Responsivo para Celular ===== */
+@media (max-width: 768px) {
+
+  /* Header / Logo */
+  .logo img {
+    width: 120px;
+  }
+  .inf_header a {
+    font-size: 14px;
+  }
+  .dropdown .btn {
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+
+  /* Banner */
+  .banner-imagem img {
+    width: 100%;
+    height: auto;
+  }
+  .banner-imagem h1 {
+    font-size: 2rem;
+  }
+
+  /* Chamada principal */
+  .chamada h2 {
+    font-size: 1.2rem;
+  }
+
+  /* Informativo */
+  .informativo {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 10px;
+  }
+  .informativo .texto p {
+    font-size: 16px;
+    right: 0;
+    width: 100%;
+  }
+  .informativo .texto .btn-opcao {
+    right: 0;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  .informativo .imagem img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ===== Parceiros Responsivo ===== */
+  .cards {
+    flex-direction: row; /* mantém inline */
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .cards .card {
+    width: calc(50% - 15px);
+    padding: 10px;
+  }
+
+  .cards .card p {
+    font-size: 16px;
+  }
+
+  .cards .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Feedbacks */
+  .feedbacks {
+    padding: 20px 10px;
+    height: auto;
+  }
+  .feedback p {
+    font-size: 16px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .btn-opcaoroxo, .btn-opcaoroxoo {
+    font-size: 14px;
+    padding: 8px 20px;
+    top: auto;
+    left: auto;
+  }
+
+  /* Cuidados */
+  .cuidados h2 {
+    font-size: 1.4rem;
+  }
+  .cuidados-opcoes {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .cuidados-opcoes .opcao img {
+    width: 100%;
+    height: auto;
+  }
+  .cuidados-opcoes .btn-opcao {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+
+  /* Rodapé */
+  .rodape p,
+  .rodape-links a {
+    font-size: 14px;
+  }
+  .rodape-redes a img {
+    width: 20px;
+    height: 20px;
+  }
+  .rodape-logo img {
+    height: 40px;
+  }
+
+  /* Menu hamburguer */
+  .hamburger {
+    display: flex;
+  }
+  .nav-menu {
+    top: 0;
+    right: 0;
+    padding: 29px;
+    height: 100vh;
+    }
+  }
+  .nav-menu a,
+  .nav-menu .dropdown {
+    font-size: 14px;
+  }
 

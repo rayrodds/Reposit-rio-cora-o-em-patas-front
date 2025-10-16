@@ -18,27 +18,37 @@
 
   <!-- Cabeçalho / Banner -->
   <header class="logo">
-    <img src="/images/logooo.webp" alt="Coração em Patas">
-    <div class="inf_header">
-      <a href="#baixar" class="cor_branco">Download</a>
-      <a href="#parceiros" class="cor_branco">Parceiros</a>
-      <a href="#" class="cor_branco">Ajuda</a>
-      <a href="#" class="cor_branco">Quem somos nós</a>
-    </div>
-    <div class="dropdown">
-      <a class="btn dropdown-toggle cor_branco hover_branco" href="#" role="button" data-bs-toggle="dropdown"
-        aria-expanded="false">
-        <i class="bi bi-person-fill cor_branco"></i>
-        Login
-      </a>
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- Logo -->
+      <a href="#"><img src="/images/logooo.webp" alt="Coração em Patas"></a>
 
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Sair</a></li>
-      </ul>
+      <!-- Botão Hambúrguer -->
+      <button id="hamburger" class="hamburger d-md-none" aria-label="Toggle menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <!-- Menu -->
+      <nav id="navMenu" class="nav-menu d-md-flex align-items-center gap-3">
+        <a href="#baixar" class="nav-link cor_branco">Download</a>
+        <a href="#parceiros" class="nav-link cor_branco">Parceiros</a>
+        <a href="#" class="nav-link cor_branco">Ajuda</a>
+        <a href="#" class="nav-link cor_branco">Quem somos nós</a>
+        <div class="dropdown">
+          <a class="nav-btn dropdown-toggle cor_branco" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="bi bi-person-fill"></i> Login
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Sair</a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
   </header>
 
-
+  <!-- Banner Imagem -->
   <div class="banner-imagem">
     <img src="/images/gato e cachorro.png" alt="Cachorro feliz">
     <h1>Coração em patas</h1>
@@ -63,9 +73,6 @@
       </p>
       <a href="login1pet.html" class="btn-opcao">Saiba mais</a>
     </div>
-
-  </section>
-
   </section>
 
   <!-- Seção Parceiros -->
@@ -81,12 +88,11 @@
         <img src="/images/cachorro preto.png" alt="Rayan Neto Oncologista">
       </div>
       <div class="card">
-        <p>patas e cia</p>
+        <p>Patas e cia</p>
         <img src="/images/cachorro com celular.png" alt="Pet shop: Casa do Pet">
       </div>
     </div>
   </section>
-
 
   <!-- Seção Feedbacks -->
   <section class="feedbacks">
@@ -94,17 +100,6 @@
       <a href="login1pet.html" class="btn-opcaoroxo">Dúvidas frequentes</a>
       <p><strong>Vorem ipsum dolor sit amet, consectetur adipiscing elit. </strong></p>
       <a href="login1pet.html" class="btn-opcaoroxoo">Ver mais +</a>
-
-      <div class="sselect">
-        
-
-
-
-      </div>
-
-
-
-      </blockquote>
     </div>
   </section>
 
@@ -119,12 +114,11 @@
       <div class="opcao">
         <img src="/images/tutor.webp" alt="Tutor">
         <a href="login1pet.html" class="btn-opcao">Tutor</a>
-
       </div>
     </div>
   </section>
 
-
+  <!-- Rodapé -->
   <footer class="rodape">
     <div class="rodape-links">
       <a href="#">Política de Privacidade</a> |
@@ -134,34 +128,33 @@
       <a href="https://instagram.com/seuperfil" class="rodape-redes-icon">
         <img src="/images/logos/instagram.svg" alt="Instagram">
       </a>
-
       <a href="https://instagram.com/seuperfil" class="rodape-redes-icon">
         <img src="/images/logos/facebook.svg" alt="facebook">
       </a>
-
       <a href="https://instagram.com/seuperfil" class="rodape-redes-icon">
         <img src="/images/logos/linkedin.svg" alt="linkedin">
       </a>
-
       <a href="https://instagram.com/seuperfil" class="rodape-redes-icon">
         <img src="/images/logos/youtuber.svg" alt="youtuber">
       </a>
-
       <a href="https://instagram.com/seuperfil" class="rodape-redes-icon">
         <img src="/images/logos/tiktok.svg" alt="tiktok">
       </a>
     </div>
-
     <div class="rodape-logo">
       <img src="/images/logooo.webp" alt="Logo Coração em Patas">
       <p>© Pet-mental – Todos os direitos reservados</p>
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+</body>
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
 
-</body>
+<!-- Menu Hamburguer -->
+<script src="/JavaScript/home.js"></script>
+
 
 </html>
