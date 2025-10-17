@@ -409,15 +409,24 @@ body {
   position: relative;
   height: 500px;
 }
-
-.feedback p {
-  font-size: 27px;
+.feedbackajuda {
+  font-size: 80px;
   line-height: 1.6;
   margin-bottom: 20px;
-  position: relative; 
+  position: relative;
   top: 150px;
   right: -20px;
   width: 650px;
+  left:300px;
+}
+
+.feedback p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  top: 150px;
+  right: -20px;
+  width: 480px;
   left:300px;
 }
 
@@ -792,4 +801,78 @@ body {
 
 #hamburger.active span:nth-child(3) {
   transform: translateY(-9px) rotate(-45deg);
+}
+
+.accordion-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px; /* <<< espaçamento entre os cards */
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* CARD */
+.accordion-card {
+  width: 100%;
+  max-width: 600px;
+  background: transparent;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  left: 300px;
+  bottom: 80px;  
+}
+
+/* efeito de hover pra destacar o card */
+.accordion-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* ITEM */
+.accordion-item {
+  position: relative;
+}
+
+/* CABEÇALHO */
+.accordion-header {
+  width: 100%;
+  background-color: #f9f9f9;
+  color: #5533FF;
+  padding: 15px 20px;
+  text-align: left;
+  border: none;
+  border-radius: 10px 10px 0px 0px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.3s;
+}
+
+
+
+/* CONTEÚDO */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  padding: 0 20px;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  border-radius: 0 0 10px 10px;
+  color: #000;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 200px;
+  padding: 15px 20px;
+}
+.accordion-item {
+  border-bottom: 2px solid #8C52FF; /* Exemplo de borda normal */
+  transition: border 0.3s;
+}
+
+.accordion-item.no-border {
+  border-bottom: none;
 }

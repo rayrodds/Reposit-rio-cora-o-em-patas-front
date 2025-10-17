@@ -73,6 +73,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Pausa ao passar o mouse
   cardsContainer.addEventListener('mouseenter', () => scrollSpeed = 0);
-  cardsContainer.addEventListener('mouseleave', () => scrollSpeed = 0.5);
+  cardsContainer.addEventListener('mouseleave', () => scrollSpeed = 0.8);
 
 });
+
+const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+accordionHeaders.forEach(header => {
+  header.addEventListener('click', () => {
+    const item = header.parentElement;
+
+    // Fecha os outros e garante que eles voltem a ter a borda
+    document.querySelectorAll('.accordion-item').forEach(i => {
+      if (i !== item) {
+        i.classList.remove('active');
+        i.classList.remove('no-border'); // garante borda nos itens fechados
+      }
+    });
+
+    // Alterna o atual
+    item.classList.toggle('active');
+    item.classList.toggle('no-border'); // remove ou coloca a borda
+  });
+});
+
