@@ -731,10 +731,12 @@ body {
     display: flex;
   }
   .nav-menu {
-    top: 0;
+    top: 120px;
     right: 0;
     padding: 29px;
-    height: 100vh;
+    height: 35vh;
+    width: 380px;
+
     }
   }
   .nav-menu a,
@@ -754,4 +756,40 @@ body {
   .card p {
     font-size: 18px;
   }
+}
+
+/* ========================
+   MENU HAMBURGUER ANIMAÇÃO
+   ======================== */
+#hamburger {
+  width: 30px;
+  height: 22px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1001;
+}
+
+#hamburger span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: #fff; /* cor das linhas */
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+/* Quando o menu estiver ativo (vira o X) */
+#hamburger.active span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+#hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+#hamburger.active span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
 }
